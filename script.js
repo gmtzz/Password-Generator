@@ -4,7 +4,11 @@ var symbols =["!","@","#"];
 var numbers =["1","2","3"];
 var uppercase =["A","B","C"];
 var lowercase =["a","b","c"];
-
+function getrandomarray(arr){
+var randomindex = Math.floor(Math.random()* arr.length);
+var randomelement = arr[randomindex]
+return randomelement 
+}
 function generatePassword(){
     var length =parseInt(prompt("How long would you like your generated password?"))
     if (Number.isNaN(length)|| length<8 || length>128){
@@ -22,6 +26,15 @@ function generatePassword(){
 
         return null
     }
+
+    var useroptions ={
+        length:length, 
+        wantsymbols: wantsymbols,
+        wantnumbers: wantnumbers,
+        wantlowercase:wantlowercase,
+        wantuppercase:wantuppercase,
+    }
+    console.log(useroptions)
 
 
 //1prompt user
