@@ -35,6 +35,26 @@ function generatePassword(){
         wantuppercase:wantuppercase,
     }
     console.log(useroptions)
+    var password = []
+    var possibleoptions = []
+    var guaranteedoptions =[]
+    if (useroptions.wantsymbols) {
+        possibleoptions = possibleoptions.concat(symbols)
+        guaranteedoptions.push(getrandomarray(symbols))
+
+    }
+    if(useroptions.wantnumbers) {
+        possibleoptions = possibleoptions.concat(numbers)
+        guaranteedoptions.push(getrandomarray(numbers))
+    }
+    if(useroptions.wantlowercase) {
+        possibleoptions = possibleoptions.concat(lowercase)
+        guaranteedoptions.push(getrandomarray(lowercase))
+    }
+    if(useroptions.wantuppercase) {
+        possibleoptions = possibleoptions.concat(uppercase)
+        guaranteedoptions.push(getrandomarray(uppercase))
+    }
 
 
 //1prompt user
