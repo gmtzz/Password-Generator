@@ -11,7 +11,7 @@ First the app is displayed in an HTML document that has the purpose of generatin
 
 # Where to find Password Generator
 The password generator can be found in Github pages, provided below is the link to the application. 
-https://github.com/gmtzz/Password-Generator.git
+https://gmtzz.github.io/Password-Generator/ 
 
 # The App in Action
 demo video: https://github.com/gmtzz/Password-Generator/assets/94001517/8e6fdec2-db79-49c3-b683-c9bd74e2b31b
